@@ -25,7 +25,6 @@ add_library(milvus-storage ${SRC_FILES})
 target_include_directories(milvus-storage PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include/milvus-storage ${CMAKE_CURRENT_SOURCE_DIR}/src ${CMAKE_CURRENT_SOURCE_DIR}/test/include)
 set(LINK_LIBS 
     arrow::libarrow
-    arrow::libparquet
     Boost::boost
     protobuf::protobuf
     glog::glog)
